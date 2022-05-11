@@ -5,24 +5,56 @@
 
   <testsuite name="designory"
     errors="0" failures="0" hostname="" id="" package="designory" skipped="0"
-    tests="1" time="2.264" timestamp="">
+    tests="2" time="2.264" timestamp="">
 
-    <testcase name="Demo test designory.org" classname="designory" time="2.264" assertions="5">
+    <testcase name="Demo test 1 designory.org" classname="designory" time="2.264" assertions="5">
+<!--
+Open Chrome browser
+Open URL https://www.designory.com/
+Click hamburger icon id="nav-toggle"
+Within Div with class="nav-wrapper scroll"
+verify:
+WORK = present
+ABOUT = present
+CAREERS = present
+LOCATIONS = present
+CONTACT = present
+NEWS = present
+ul contains 6 li = TRUE
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+Verify links open correct URL
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
+Within Div with class="nav-wrapper scroll"
+verify:
+WORK = https://www.designory.com/work
+ABOUT = https://www.designory.com/about
+CAREERS = https://www.designory.com/careers
+LOCATIONS = https://www.designory.com/
+********************************************************
+*with sublist containing: Long Beach, Chicago, Nashville, Tokyo, London, Hong Kong, Paris, New York, New Jersey, Portland, Philadelphia
+********************************************************
+CONTACT = https://www.designory.com/contact
+NEWS = https://www.designory.com/news
 
-
-
-
-
-
-
-
+-->
     </testcase>
 
+    <testcase name="Demo test 2 designory.org" classname="designory" time="2.264" assertions="5">
+<!--
+Open https://www.designory.com/locations/chicago
+Verify;
+footer contains "Chicago"
+H1 contin text "CHI"
+class "side-title" next p element = "Phone: +1 312 729 4500"
+font-size of H2 where class="heading-2" = 40px
+Anchor tag with class="location":
+href = "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
+img src = "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
 
-
-
+-->
+    </testcase>
 
 
 
