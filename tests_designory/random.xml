@@ -1,0 +1,34 @@
+selenium_server: {
+  // Selenium Server is running locally and is managed by Nightwatch
+  // Install the NPM package @nightwatch/selenium-server
+  //  or download the selenium server jar file from https://github.com/SeleniumHQ/selenium/releases/
+  selenium: {
+    start_process: true,
+    port: 4444,
+    server_path: '', // Leave empty if @nightwatch/selenium-server is installed
+    command: 'standalone', // Selenium 4 only
+    cli_args: {
+      // Configure the paths to individual drivers below:
+      //
+      // 'webdriver.gecko.driver': '',
+      // 'webdriver.chrome.driver': ''
+      // 'webdriver.edge.driver': ''
+    }
+  },
+  webdriver: {
+    start_process: false,
+    default_path_prefix: '/wd/hub'
+  }
+}
+
+
+module.exports = {
+  'Demo test designory.com': function (browser) {
+    browser
+      .url('https://www.designory.com/')
+      .setValue('input[type=search]', 'nightwatch')
+      .click('button[type=submit]')
+      .assert.containsText('.mainline-results', 'Nightwatch.js')
+      .end();
+  }
+};
