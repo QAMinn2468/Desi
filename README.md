@@ -4,31 +4,30 @@ A place to practice writing tests with Selenium
 # Set up your environment:
 
 Node.js
-  if node.js is not installed:
-    1. go to https://nodejs.org/en/
-    2. download to desktop
-    3. install node.js
-    4. Python will update if needed.
+
+if node.js is not installed:
+* Go to https://nodejs.org/en/
+* Download to desktop
+* install node.js
+* Python will update if needed.
 
 Nightwatch
-  1. for up to date info: https://nightwatchjs.org/guide/getting-started/installation.html
-  2. on the command line
-  3. $ npm install nightwatch -g --save-dev
+* For up to date info: https://nightwatchjs.org/guide/getting-started/installation.html
+* On the command line
+* $ npm install nightwatch -g --save-dev
 
 Install browser driver (Chrome)
-  1. npm install chromedriver --save-dev
+* npm install chromedriver --save-dev
 
 Install Selenium Server
-  1. Check java version: $ java -version
-  2. Install Java if needed: https://www.oracle.com/java/technologies/downloads/
-  3. Install version 4: $ npm install @nightwatch/selenium-server     
-  4. to fix/reduce the number of vulnerabilites in NPM, run: $ npm audit fix  
+* Check java version: $ java -version
+* Install Java if needed: https://www.oracle.com/java/technologies/downloads/
+* Install version 4: $ npm install @nightwatch/selenium-server     
+* to fix/reduce the number of vulnerabilites in NPM, run: $ npm audit fix  
 
 Clone Repo and set up your working branch
-  1. https://github.com/QAMinn2468/Desi
+* https://github.com/QAMinn2468/Desi
   
-----------------------------------------------------------------------------------------------------
-My Plan
 ----------------------------------------------------------------------------------------------------
 
 # Test #1 Menu Verification
