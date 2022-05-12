@@ -12,14 +12,28 @@
 Open Chrome browser
 Open URL https://www.designory.com/
 Click hamburger icon id="nav-toggle"
-Within Div with class="nav-wrapper scroll"
-verify:
+Within Div class="nav-wrapper scroll"
+verify ul contains the following li:
+
+<a href="/work">WORK</a>
 WORK = present
+
+<a href="/about">ABOUT</a>
 ABOUT = present
+
+<a href="/careers">CAREERS</a>
 CAREERS = present
+
+<a href="#" class="subnav-toggle">LOCATIONS</a>
 LOCATIONS = present
+
+<a href="/contact">CONTACT</a>
 CONTACT = present
+
+<a href="/news">NEWS</a>
 NEWS = present
+
+
 ul contains 6 li = TRUE
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -34,9 +48,25 @@ CAREERS = https://www.designory.com/careers
 LOCATIONS = https://www.designory.com/
 ********************************************************
 *with sublist containing: Long Beach, Chicago, Nashville, Tokyo, London, Hong Kong, Paris, New York, New Jersey, Portland, Philadelphia
+
+ul class="subnav"
+contains all of the following:
+<a href="/locations/long-beach">LONG BEACH</a>
+<a href="/locations/chicago">CHICAGO</a>
+<a href="/locations/nashville">NASHVILLE</a>
+<a href="/locations/toyko">TOYKO</a>
+<a href="/locations/london">LONDON</a>
+<a href="/locations/hong kong">HONG KONG</a>
+<a href="/locations/paris">PARIS</a>
+<a href="/locations/new york">NEW YORK</a>
+<a href="/locations/new jersey">NEW JERSEY</a>
+<a href="/locations/portland">PORTLAND</a>
+<a href="/locations/philadelphia">PHILADELPHIA</a>
+
 ********************************************************
 CONTACT = https://www.designory.com/contact
 NEWS = https://www.designory.com/news
+close tab
 
 -->
     </testcase>
@@ -44,14 +74,14 @@ NEWS = https://www.designory.com/news
     <testcase name="Demo test 2 designory.org" classname="designory" time="2.264" assertions="5">
 <!--
 Open https://www.designory.com/locations/chicago
-Verify;
-footer contains "Chicago"
-H1 contin text "CHI"
-class "side-title" next p element = "Phone: +1 312 729 4500"
-font-size of H2 where class="heading-2" = 40px
-Anchor tag with class="location":
-href = "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
+Verify:
+footer contains "Chicago"  (except website does NOT have Chicago at this location - EXPECT FAIL)
+H1 class="heading-xl" contains text "CHI"
+div class="sude-section spacing-right" next p contains the following text "Phone: +1 312 729 4500"
+font-size of H2 where class="heading-2" = 40px   (Font-size=1.75rem - EXPECT FAIL)
+Anchor tag with class="location":     (nearly the same, pin in street vs pin inside block)
 img src = "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
+close tab
 
 -->
     </testcase>
