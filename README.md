@@ -56,7 +56,10 @@ Clone Repo and set up your working branch
 * H2 font size is "40px"
 * Map URL is  "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
 
-          
+# For additional information
+
+* https://nightwatchjs.org/   Nightwatch.js website
+* https://www.youtube.com/watch?v=Q8jIlG6WXvI   YouTube video - Coding with Dom - End-to-end testing with NightwatchJS #1: Getting started
 
           
 
