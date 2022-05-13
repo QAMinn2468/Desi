@@ -58,8 +58,8 @@ Clone Repo and set up your working branch
 
 # For additional information
 
-https://nightwatchjs.org/   Nightwatch.js website
-https://www.youtube.com/watch?v=Q8jIlG6WXvI   YouTube video - Coding with Dom - End-to-end testing with NightwatchJS #1: Getting started
+* https://nightwatchjs.org/   Nightwatch.js website
+* https://www.youtube.com/watch?v=Q8jIlG6WXvI   YouTube video - Coding with Dom - End-to-end testing with NightwatchJS #1: Getting started
 
           
 
