@@ -8,7 +8,9 @@
     tests="2" time="2.264" timestamp="">
 
     <testcase name="Demo test 1 designory.org" classname="designory" time="2.264" assertions="5">
+
 <!--
+
 Open Chrome browser
 Open URL https://www.designory.com/
 Click hamburger icon id="nav-toggle"
@@ -72,12 +74,14 @@ close tab
     </testcase>
 
     <testcase name="Demo test 2 designory.org" classname="designory" time="2.264" assertions="5">
+
 <!--
+
 Open https://www.designory.com/locations/chicago
 Verify:
-footer contains "Chicago"  (except website does NOT have Chicago at this location - EXPECT FAIL)
+footer contains "Chicago"  (except website does NOT have Chicago here - EXPECT FAIL)
 H1 class="heading-xl" contains text "CHI"
-div class="sude-section spacing-right" next p contains the following text "Phone: +1 312 729 4500"
+div class="side-section spacing-right" next p contains the following text "Phone: +1 312 729 4500"
 font-size of H2 where class="heading-2" = 40px   (Font-size=1.75rem - EXPECT FAIL)
 Anchor tag with class="location":     (nearly the same, pin in street vs pin inside block)
 img src = "https://maps.googleapis.com/maps/api/staticmap?center= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&zoom=16.5&markers= 225 N Michigan Ave, Suite 700 Chicago, IL 60601&size=400x150&key=AIzaSyAkAXQMgbxLGj6ZFqVAAR8JT4-5LaWKfIY"
